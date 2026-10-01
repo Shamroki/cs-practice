@@ -2,7 +2,7 @@ st1 = float(input('Введите порог в градусах Цельсия 
 n = int(input('Введте количество записей '))
 count_error = 0
 count_increase = 0
-mx = 0
+mx = -1000000000000
 sr_sum = 0
 for i in range(n):
     new_st = input()
