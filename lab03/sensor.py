@@ -25,5 +25,5 @@ for i in range(n):
 print(n)
 print(count_error)
 print(count_increase)
-print(mx)
+print(f'{mx:.1f}')
 print(f'{(sr_sum/(n-count_error)):.1f}')
