@@ -28,3 +28,12 @@ def ranking(names, scores) :
             if scores[result[i]] < scores[result[j]]:
                 result[i],result[j] = result[j],result[i]
     return [names[i] for i in result]
+
+
+def above_average(names, scores):
+    a = average(scores)
+    t = []
+    for i in range(len(names)):
+        if scores[i] > a:
+            t += [names[i]]
+    return t
