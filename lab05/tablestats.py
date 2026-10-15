@@ -15,6 +15,14 @@ def read_rows(lines):
                 result.append(result_line)
     return result
 
-
-
 #python main.py
+
+def count_types(rows):
+    types = {}
+
+    for line in rows:
+        if line['тип'] in types:
+            types[line['тип']] += 1
+        else:
+            types:update({line['тип']:1})
+    return types
