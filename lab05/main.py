@@ -3,6 +3,7 @@ with open('events.csv', encoding="utf-8") as table:
 
     list_dict = read_rows(table)
     count_types_ = count_types(list_dict)
+    kind = input()
     total_minutes_ = total_minutes(list_dict,kind)
     to_csv_ = to_csv(count_types_)
 
