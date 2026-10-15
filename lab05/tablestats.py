@@ -26,3 +26,21 @@ def count_types(rows):
         else:
             types:update({line['тип']:1})
     return types
+
+
+def total_minutes(rows,kind):
+    sum = 0.0
+
+    for line in rows:
+        if line['тип'] == kind:
+            sum += float(line['минуты'])
+    return sum
+        
+
+
+#def to_csv(counts):
+    #result = "тип;количество\n"
+    #new_counts = sorted(counts,key = lambd c: c[0])
+
+    #for type in new_counts:
+        #result += f"{}"
