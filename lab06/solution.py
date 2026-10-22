@@ -16,7 +16,3 @@ def only_in_first(first, second):
     first = set(first)
     second = set(second)
     return sorted(list(first-second))
-
-
-
-print(count_items(["ошибка", "запуск", "ошибка"]))
