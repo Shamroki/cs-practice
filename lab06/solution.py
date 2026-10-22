@@ -18,12 +18,10 @@ def common(first, second):
     return sorted(set(t))
 
 def only_in_first(first, second):
-    t = []
-    if (len(first) != 0) or (len(second)!=0):
-        for item in first:
-            if item not in second:
-                t += [item]
-    t.sort()
-    return t
+    first = set(first)
+    second = set(second)
+    return first-second
+
+
 
 print(count_items(["ошибка", "запуск", "ошибка"]))
