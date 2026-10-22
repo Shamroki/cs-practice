@@ -11,9 +11,10 @@ def unique_sorted(values):
 def common(first, second):
     t = []
     for i in first:
-        if i in (first & second):
-            t += [i]
-    return t
+        for g in second:
+            if i == g:
+                t += [i]
+    return sorted(set(t))
 
 def only_in_first(first, second):
     t = []
