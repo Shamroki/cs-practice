@@ -10,12 +10,7 @@ def unique_sorted(values):
     return sorted(set(values))
 
 def common(first, second):
-    t = []
-    for i in first:
-        for g in second:
-            if i == g:
-                t += [i]
-    return sorted(set(t))
+    return sorted(list(first & second))
 
 def only_in_first(first, second):
     first = set(first)
