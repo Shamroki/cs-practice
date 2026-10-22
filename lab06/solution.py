@@ -10,12 +10,12 @@ def unique_sorted(values):
     return sorted(set(values))
 
 def common(first, second):
-    return sorted(list(first & second))
+    return sorted(list(set(first) & set(second)))
 
 def only_in_first(first, second):
     first = set(first)
     second = set(second)
-    return first-second
+    return sorted(list(first-second))
 
 
 
