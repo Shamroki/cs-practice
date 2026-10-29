@@ -20,7 +20,7 @@ def column_means(matrix):
     arr = np.array(matrix,dtype = float)
     if len(arr) == 0:
         return []
-    return np.round(np.sum(arr,axis = 0),6).tolist()
+    return np.round(np.mean(arr,axis = 0),6).tolist()
 
 def column_range(matrix, column):
     arr = np.array(matrix,dtype = float)
