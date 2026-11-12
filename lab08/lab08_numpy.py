@@ -71,7 +71,7 @@ print(matrix)
 
 numbers = np.arange(0,12)
 table = numbers.reshape(3,4)
-transposed = numbers.T
+transposed = table.T
 print(numbers.shape)
 print(table.shape)
 print(transposed.shape)
