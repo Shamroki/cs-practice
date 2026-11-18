@@ -18,9 +18,9 @@ def vector_report(values):
     return dictionary
 
 def change_vector(values):
-    vector = np.array(values.copy())
-    vector[1:4] = 99
-    vector[1::2] = -1
+    vector = np.array(values,dtype=float)
+    vector[2:4] = 99
+    vector[::2] = -1
     return vector.tolist()
 
 def cap_above(values, limit):
@@ -33,6 +33,6 @@ def celsius_to_fahrenheit(values):
     arr = arr * 9/5 + 32
     return arr.tolist()
 
-print(vector_report([5, 10, 15, 20, 25, 30]))
+print(change_vector([0, 3, 6, 9, 12, 15, 18, 21]))
     
     
