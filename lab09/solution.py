@@ -8,11 +8,11 @@ def vector_report(values):
     if len(values) == 0:
         return []
     dictionary = {
-        'third:' :values[2] if len(values) >= 3 else None,
-        'last:' :values[-1],
-        'middle:':values[2:6]if len(values) >= 6 else None,
+        'third' :values[2] if len(values) >= 3 else None,
+        'last' :values[-1],
+        'middle':values[2:6]if len(values) >= 6 else None,
         'every_second':values[::2],
-        'reversed:':values[::-1]
+        'reversed':values[::-1]
                   
     }
     return dictionary
@@ -33,6 +33,6 @@ def celsius_to_fahrenheit(values):
     arr = arr * 9/5 + 32
     return arr.tolist()
 
-print(vector_report([0, 3, 6, 9, 12, 15, 18, 2]))
+print(vector_report([5, 10, 15, 20, 25, 30]))
     
     
