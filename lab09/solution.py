@@ -13,13 +13,13 @@ def vector_report(values):
         'middle':values[2:6]if len(values) >= 6 else None,
         'every_second':values[::2],
         'reversed':values[::-1]
-                  
+
     }
     return dictionary
 
 def change_vector(values):
     vector = np.array(values,dtype=float)
-    vector[2:4] = 99
+    vector[2:5] = 99
     vector[::2] = -1
     return vector.tolist()
 
@@ -34,5 +34,3 @@ def celsius_to_fahrenheit(values):
     return arr.tolist()
 
 print(change_vector([0, 3, 6, 9, 12, 15, 18, 21]))
-    
-    
