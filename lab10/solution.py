@@ -7,7 +7,7 @@ def rectangle(matrix, row_start, row_stop, column_start, column_stop):
     return np.asarray(matrix)[row_start:row_stop,column_start:column_stop]
 
 def replace_rectangle(matrix, row_start, row_stop, column_start, column_stop, value):
-    new_matrix = np.asarray(matrix)
+    new_matrix = np.asarray(matrix).copy()
     new_matrix[row_start:row_stop,column_start:column_stop]=value
     return new_matrix.tolist()
 
