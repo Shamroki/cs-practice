@@ -14,7 +14,7 @@ def replace_rectangle(matrix, row_start, row_stop, column_start, column_stop, va
 def matrix_vector_product(matrix, vector):
     return (np.asarray(matrix) @ np.asarray(vector).tolist()
 
-def atrix_multiply(left, right):
+def matrix_multiply(left, right):
     return (np.asarray(left) @ np.asarray(right).tolist()
 
 def transpose_matrix(matrix):
